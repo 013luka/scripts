@@ -1,0 +1,14 @@
+repeat task.wait() until game:IsLoaded()
+
+local Games = {
+    [8737602449] = "https://raw.githubusercontent.com/013luka/scripts/refs/heads/main/plsdonate",
+    [18901165922] = "https://raw.githubusercontent.com/013luka/scripts/refs/heads/main/psgo",
+    [142823291] = "https://raw.githubusercontent.com/013luka/scripts/refs/heads/main/mm2",
+    [8737899170] = "https://raw.githubusercontent.com/013luka/scripts/refs/heads/main/ps99",
+
+}
+
+local scriptlink = Games[game.PlaceId]
+if scriptlink then
+    loadstring(game:HttpGet(scriptlink))()
+end
